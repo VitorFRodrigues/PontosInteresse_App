@@ -13,10 +13,10 @@ app.get('/', function(request, response){
 
 const bodyParser = require('body-parser');
 //este middleware deve estar acima das routes-handlers!
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
+app.use(express.json());
+/*app.use(express.urlencoded({
     extended: true
-}));
+}));*/
 
 //todo o url começado por '/api' chama as rotas em './routes/api'
 const routes = require('./routes/api');

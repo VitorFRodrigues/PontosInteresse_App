@@ -13,6 +13,9 @@ router.get('/details', apiControler.details);
 // TODO: adicionar novo ponto de interesse
 router.post('/interest', apiControler.add);
 
+// TODO: adicionar novo ponto de interesse
+router.post('/create-interest', apiControler.create);
+
 // TODO: atualizar ponto de interesse
 router.put('/interest/:id', apiControler.update);
 

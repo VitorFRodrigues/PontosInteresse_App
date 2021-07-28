@@ -1,3 +1,5 @@
+const pInterest = require('../models/PImodel');
+
 exports.test = function (request, response) {
     response.send('Olá! Teste ao Controller');
 };
@@ -14,6 +16,7 @@ exports.add = function (req, res) {
 
 //adicionar novo ponto de interesse
 exports.create = function (req, res) {
+
     console.log('You made a POST request: ', req.body);
     res.send({
         type: 'POST',
